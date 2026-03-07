@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ホーム</title>
+    <style>
+        /* ページ全体の設定 */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5; /* 薄いグレーの背景 */
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            height: 100vh; /* 画面いっぱいの高さ */
+            display: flex;
+            justify-content: center; /* 横方向の中央揃え */
+            align-items: center; /* 縦方向の中央揃え */
+        }
+
+        /* ボタンを囲むコンテナ */
+        .button-container {
+            display: flex;
+            gap: 40px; /* ボタン同士の間隔 */
+        }
+
+        /* ボタンの共通デザイン */
+        .big-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;  /* 幅 */
+            height: 120px; /* 高さ */
+            background-color: #ffffff;
+            color: #333;
+            text-decoration: none; /* 下線を消す */
+            font-size: 24px;
+            font-weight: bold;
+            border: 2px solid #333; /* 枠線 */
+            border-radius: 12px; /* 角丸 */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* 影 */
+            transition: all 0.3s ease; /* アニメーション設定 */
+        }
+
+        /* ホバー時（マウスを乗せた時）の動き */
+        .big-button:hover {
+            background-color: #333;
+            color: #fff;
+            transform: translateY(-5px); /* 少し浮き上がる */
+            box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+        }
+
+        /* スマートフォン向けの調整 */
+        @media (max-width: 600px) {
+            .button-container {
+                flex-direction: column; /* 縦並びにする */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="button-container">
+        <a href="kiyaku.html" class="big-button">規約</a>
+
+        <a href="konaka-shiotime.html" class="big-button">古中</a>
+    </div>
+
+</body>
+</html>

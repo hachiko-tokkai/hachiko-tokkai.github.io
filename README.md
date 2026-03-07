@@ -1,3 +1,3 @@
-# これは何
-はちこうとっかいが練習で構築しているものです
-見ても面白くありません。古中のダイヤが入ったShioTimeがあります。
+#はちこうとっかいドットコム
+[RTM向けパックの規約](https://hachiko-tokkai.github.io/kiyaku.html)
+[古中鉄道用ShioTime](https://hachiko-tokkai.github.io/konaka-shiotime.html)

@@ -15,7 +15,7 @@ function alertRefresh(){
                     if(thisAlert.length == 1){
                         //全体
                         if(prevAlert[0] != thisAlert[0]){
-                            console.log('全体通知キタ');
+                            console.log('全体通知BRO');
                             if(thisAlert[0] != ""){
                                 var audio = new Audio('./js/alert.ogg');
                                 audio.play();
@@ -27,7 +27,7 @@ function alertRefresh(){
                     else if(thisAlert[0] == thisTrainNo){
                         //個別
                         if(prevAlert[1] != thisAlert[1]){
-                            console.log('個別通知キタ');
+                            console.log('個別通知NIGGA');
                             if(thisAlert[1] != ""){
                                 var audio = new Audio('./js/alert.ogg');
                                 audio.play();

@@ -2,7 +2,7 @@ function tableWrite(dia){
     var thisTime = db.train[dia];
 
     if(thisTime == undefined){
-        console.log('存在しない列車番号')
+        console.log('それらの存在しない列車番号')
         return;
     }
 

@@ -198,7 +198,7 @@ function selectDB(url, parsed = false){
 }
 
 function listGroup(){
-	$('#titleHelper').text('リストからグループを選択してください。');
+	$('#titleHelper').text('ダイヤ選べカス');
 	
 	var output = '';
     Object.keys(db.group).forEach(e => {
@@ -219,13 +219,13 @@ function selectGroup(group){
     db.station = station;
 
     if(db.alert == undefined){
-        alert('このグループは通知受信URLが定義されていないため、通知機能が動きません。');
+        alert('これは通知動かねえよバーカ');
     }
 	listWork();
 }
 
 function listWork(){
-    $('#titleHelper').text('リストから仕業を選択してください。');
+    $('#titleHelper').text('はよ運番選べや');
     
     if(db.work == undefined){
         alert(`このグループには設定されている仕業がありません。\n「番号で選択」から解答ダイヤを選択してください。`);
@@ -252,7 +252,7 @@ function listWork(){
 }
 
 function listTrain(work){
-    $('#titleHelper').text('リストから列車を選択してください。');
+    $('#titleHelper').text('電を選べバーカ');
 
     thisWork = work;
     thisWorkLength = db.work[work].length;
@@ -316,7 +316,7 @@ function graphTrain(work){
         return;
     }
 
-    $('#titleHelper').text('リストから列車を選択してください。');
+    $('#titleHelper').text('電を選べバーカ');
 
     thisWork = work;
     thisWorkLength = db.work[work].length;
@@ -460,11 +460,11 @@ function changeTrain(pm){
         return;
     }
     else if(pm == -1 && thisWorkNo == 0){
-        alert(`仕業${thisWork}では${thisTrainNo}が最初の列車です。`);
+        alert(`仕業${thisWork}だと${thisTrainNo}が出庫電だわボケ`);
         return;
     }
     else if(pm == 1 && thisWorkNo+1 == thisWorkLength){
-        alert(`仕業${thisWork}では${thisTrainNo}が最後の列車です。`);
+        alert(`仕業${thisWork}だと${thisTrainNo}で終わりだわバーカ`);
         return;
     }
 
@@ -487,12 +487,12 @@ function selectNumber(){
         inputCars = $('#inputTrainCars').val();
 
     if(inputNumber == ''){
-        alert(`列車番号を入力してください。`);
+        alert(`いや列番打てよ`);
         return;
     }
 
     if(db.train[inputNumber] == undefined){
-        alert(`このグループに${inputNumber}列車はありません。`);
+        alert(`${inputNumber}なんて列番ねえよ`);
         return;
     }
 
